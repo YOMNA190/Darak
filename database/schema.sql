@@ -59,12 +59,12 @@ CREATE TRIGGER update_projects_updated_at BEFORE UPDATE ON projects
 
 -- Insert sample data for testing (optional)
 -- INSERT INTO leads (name, phone, email, service, area, message) VALUES
--- ('أحمد محمد', '+966501234567', 'ahmed@example.com', 'marble-ceramic', '100-200', 'أريد تشطيب صالة المنزل'),
+-- ('أحمد محمد', '+966580369568', 'ahmed@example.com', 'marble-ceramic', '100-200', 'أريد تشطيب صالة المنزل'),
 -- ('فاطمة علي', '+966509876543', 'fatima@example.com', 'gypsum-board', '50-100', 'تركيب جبس بورد في غرفة النوم'),
 -- ('محمد السعيد', '+966555555555', NULL, 'painting-plastering', 'أكثر من 1000', 'دهان المنزل كاملاً');
 
 -- INSERT INTO projects (name, client_name, client_phone, service, area, budget, status) VALUES
--- ('تشطيب فيلا الرياض', 'عبدالله أحمد', '+966501111111', 'marble-ceramic', 500, 150000, 'in_progress'),
+-- ('تشطيب فيلا الدمام', 'عبدالله أحمد', '+966501111111', 'marble-ceramic', 500, 150000, 'in_progress'),
 -- ('ديكور مكتب تجاري', 'شركة النور', '+966502222222', 'gypsum-board', 200, 80000, 'new'),
 -- ('دهان شقة سكنية', 'سارة محمد', '+966503333333', 'painting-plastering', 120, 25000, 'completed');
 

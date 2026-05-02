@@ -17,13 +17,13 @@ const Footer = () => {
               <span className="font-heading text-2xl font-bold">دارك</span>
             </div>
             <p className="text-gray-300 mb-6 leading-relaxed">
-              شركة دارك للتشطيبات والديكور الفاخر، نقدم خدمات متميزة في مجال التشطيبات والديكور 
-              بأعلى معايير الجودة والإتقان. نحن نؤمن بأن منزلك يستحق الأفضل.
+              شركة دارك للتشطيبات والديكور الفاخر، نقدم خدمات متميزة في مجال المقاولات، السباكة، الكهرباء، والتشطيبات 
+              بأعلى معايير الجودة والإتقان في الدمام. نحن نؤمن بأن منزلك يستحق الأفضل.
             </p>
             <div className="space-y-3">
               <div className="flex items-center space-x-3 space-x-reverse">
                 <Phone size={18} className="text-luxury-gold" />
-                <span>+966 50 123 4567</span>
+                <span>966580369568</span>
               </div>
               <div className="flex items-center space-x-3 space-x-reverse">
                 <Mail size={18} className="text-luxury-gold" />
@@ -31,7 +31,7 @@ const Footer = () => {
               </div>
               <div className="flex items-center space-x-3 space-x-reverse">
                 <MapPin size={18} className="text-luxury-gold" />
-                <span>الرياض، المملكة العربية السعودية</span>
+                <span>الدمام، المملكة العربية السعودية</span>
               </div>
             </div>
           </div>
@@ -72,11 +72,11 @@ const Footer = () => {
           <div>
             <h3 className="font-heading text-lg font-semibold mb-4">خدماتنا</h3>
             <ul className="space-y-2">
+              <li className="text-gray-300">مقاولات عامة</li>
+              <li className="text-gray-300">سباكة وكهرباء</li>
               <li className="text-gray-300">الرخام والسيراميك</li>
-              <li className="text-gray-300">الجبس بورد</li>
-              <li className="text-gray-300">الدهانات والمحارة</li>
-              <li className="text-gray-300">التصميم الداخلي</li>
-              <li className="text-gray-300">الاستشارات الفنية</li>
+              <li className="text-gray-300">جبسنوود</li>
+              <li className="text-gray-300">لياسة ودهانات</li>
             </ul>
           </div>
         </div>
@@ -104,4 +104,3 @@ const Footer = () => {
 }
 
 export default Footer
-

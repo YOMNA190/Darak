@@ -51,7 +51,7 @@ const ContactPage = () => {
     {
       icon: Phone,
       title: 'الهاتف',
-      value: '+966 50 123 4567',
+      value: '966580369568',
       description: 'متاح 24/7 للاستفسارات العاجلة'
     },
     {
@@ -63,7 +63,7 @@ const ContactPage = () => {
     {
       icon: MapPin,
       title: 'العنوان',
-      value: 'الرياض، المملكة العربية السعودية',
+      value: 'الدمام، المملكة العربية السعودية',
       description: 'نخدم جميع مناطق المملكة'
     },
     {
@@ -178,7 +178,7 @@ const ContactPage = () => {
                     value={formData.phone}
                     onChange={handleChange}
                     className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-luxury-gold focus:border-transparent transition-colors"
-                    placeholder="+966 50 123 4567"
+                    placeholder="966580369568"
                   />
                 </div>
 
@@ -242,7 +242,7 @@ const ContactPage = () => {
                 <div className="text-center text-white p-8">
                   <MapPin size={64} className="mx-auto mb-4 text-luxury-gold" />
                   <h3 className="font-heading text-2xl font-bold mb-4">موقعنا</h3>
-                  <p className="text-lg mb-2">الرياض</p>
+                  <p className="text-lg mb-2">الدمام</p>
                   <p className="text-lg">المملكة العربية السعودية</p>
                   <p className="text-sm mt-4 text-gray-200">
                     نخدم جميع مناطق المملكة
@@ -271,7 +271,7 @@ const ContactPage = () => {
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <a 
-                href="tel:+966501234567" 
+                href="tel:966580369568" 
                 className="btn-luxury text-lg px-10 py-4 inline-flex items-center justify-center space-x-2 space-x-reverse"
               >
                 <Phone size={20} />

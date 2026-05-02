@@ -3,20 +3,56 @@
 import { motion } from 'framer-motion'
 import Image from 'next/image'
 import Link from 'next/link'
-import { CheckCircle, ArrowLeft, Palette, Hammer, Sparkles } from 'lucide-react'
+import { CheckCircle, ArrowLeft, Palette, Hammer, Sparkles, Zap, Droplets, Layout, Home, Paintbrush } from 'lucide-react'
 
 const ServicesPage = () => {
-  const fadeInUp = {
-    initial: { opacity: 0, y: 60 },
-    animate: { opacity: 1, y: 0 },
-    transition: { duration: 0.6 }
-  }
-
   const services = [
+    {
+      id: 'general-contracting',
+      name: 'مقاولات عامة',
+      description: 'خدمات المقاولات العامة والإنشاءات المتكاملة بأعلى معايير الجودة في الدمام',
+      image: 'https://images.unsplash.com/photo-1541913053965-03f710594403?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      icon: Home,
+      features: [
+        'إشراف هندسي متكامل',
+        'بناء الملاحق والمجالس',
+        'ترميم المباني والفلل',
+        'عزل الأسطح والخزانات',
+        'تسليم مفتاح'
+      ],
+      process: [
+        'المعاينة ورفع المقاسات',
+        'تقديم عرض السعر',
+        'توقيع العقد والتنفيذ',
+        'مراحل الفحص والجودة',
+        'التسليم النهائي'
+      ]
+    },
+    {
+      id: 'plumbing-electrical',
+      name: 'سباكة وكهرباء',
+      description: 'تأسيس وتشطيب أعمال السباكة والكهرباء بأحدث الأنظمة والتقنيات',
+      image: 'https://images.unsplash.com/photo-1581094288338-2314dddb7ec4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
+      icon: Zap,
+      features: [
+        'تأسيس شبكات السباكة',
+        'تركيب الأدوات الصحية',
+        'تأسيس وتمديد الكهرباء',
+        'تركيب لوحات التوزيع',
+        'أنظمة الإنارة الحديثة'
+      ],
+      process: [
+        'تخطيط المسارات',
+        'أعمال التأسيس',
+        'اختبار الضغط والأمان',
+        'تركيب التشطيبات',
+        'الفحص النهائي'
+      ]
+    },
     {
       id: 'marble-ceramic',
       name: 'الرخام والسيراميك',
-      description: 'تركيب وتشطيب الرخام والسيراميك بأعلى معايير الجودة والدقة',
+      description: 'تركيب وتشطيب الرخام والسيراميك بأعلى معايير الجودة والدقة في الدمام',
       image: 'https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       icon: Sparkles,
       features: [
@@ -36,16 +72,16 @@ const ServicesPage = () => {
     },
     {
       id: 'gypsum-board',
-      name: 'الجبس بورد',
-      description: 'أعمال الجبس بورد والديكورات الجبسية المتقنة والمبتكرة',
+      name: 'جبسنوود وديكور',
+      description: 'أعمال الجبسنوود والديكورات الجبسية المتقنة والمبتكرة',
       image: 'https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       icon: Hammer,
       features: [
         'تركيب الأسقف المستعارة',
         'الفواصل والجدران الجبسية',
-        'الديكورات والأشكال الهندسية',
+        'ديكورات شاشات وبلازما',
         'الإضاءة المخفية والمدمجة',
-        'العزل الحراري والصوتي'
+        'تصاميم مودرن وكلاسيك'
       ],
       process: [
         'التصميم والتخطيط',
@@ -57,21 +93,21 @@ const ServicesPage = () => {
     },
     {
       id: 'painting-plastering',
-      name: 'الدهانات والمحارة',
-      description: 'أعمال الدهانات والمحارة بأفضل المواد والتقنيات الحديثة',
+      name: 'لياسة ودهانات',
+      description: 'أعمال اللياسة والدهانات بأفضل المواد والتقنيات الحديثة في الدمام',
       image: 'https://images.unsplash.com/photo-1562259949-e8e7689d7828?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80',
       icon: Palette,
       features: [
-        'دهانات الجدران الداخلية والخارجية',
-        'المحارة والتنعيم',
-        'الدهانات الديكورية والفنية',
+        'أعمال اللياسة الخارجية والداخلية',
+        'دهانات الجدران والأسقف',
+        'الدهانات الديكورية (تعتيق، روعة، خيال)',
         'معالجة الرطوبة والتشققات',
         'الطلاء المقاوم للعوامل الجوية'
       ],
       process: [
         'تحضير وتنظيف الأسطح',
-        'معالجة العيوب والتشققات',
-        'تطبيق طبقة الأساس',
+        'أعمال اللياسة والتنعيم',
+        'تطبيق طبقات الأساس',
         'الدهان النهائي',
         'الفحص والتسليم'
       ]
@@ -90,10 +126,10 @@ const ServicesPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h1 className="font-heading text-5xl md:text-6xl font-bold text-luxury-green mb-6">
-              خدماتنا المتميزة
+              خدماتنا المتميزة في الدمام
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-              نقدم مجموعة شاملة من خدمات التشطيبات والديكور بأعلى معايير الجودة والإتقان
+              نقدم مجموعة شاملة من خدمات المقاولات، السباكة، الكهرباء، والتشطيبات بأعلى معايير الجودة والإتقان
             </p>
           </motion.div>
         </div>
@@ -195,10 +231,10 @@ const ServicesPage = () => {
             transition={{ duration: 0.6 }}
           >
             <h2 className="font-heading text-4xl md:text-5xl font-bold mb-6">
-              مستعد لبدء مشروعك؟
+              مستعد لبدء مشروعك في الدمام؟
             </h2>
             <p className="text-xl mb-8 text-gray-200">
-              تواصل معنا اليوم واحصل على استشارة مجانية وعرض سعر مخصص لمشروعك
+              تواصل معنا اليوم على 966580369568 واحصل على استشارة مجانية وعرض سعر مخصص لمشروعك
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Link href="/start-project" className="btn-luxury text-lg px-10 py-4">
@@ -216,4 +252,3 @@ const ServicesPage = () => {
 }
 
 export default ServicesPage
-
